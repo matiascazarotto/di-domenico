@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/system';
-import { Box, Typography, Link, IconButton } from '@mui/material';
+import { Box, Typography, IconButton } from '@mui/material';
 
 const SectionContainer = styled(Box)({
     display: 'flex',
@@ -124,10 +124,10 @@ function Contact() {
                         <SocialText>WHATSAPP</SocialText>
                         <SocialText>(55) 99721-5044</SocialText>
                     </CustomIconButton>
-                    <CustomIconButton href="mailto:didomenico@email.com" target="_blank" aria-label="Instagram" color="inherit">
+                    <CustomIconButton href="mailto:eduardo@di-domenico.com" target="_blank" aria-label="Instagram" color="inherit">
                         <img src="imgs/logo-email.png" alt="Instagram" />
                         <SocialText>E-MAIL</SocialText>
-                        <SocialText>didomenico@email.com</SocialText>
+                        <SocialText>eduardo@di-domenico.com</SocialText>
                     </CustomIconButton>
                     <CustomIconButton href="https://www.instagram.com/eduardo_di_domenico" target="_blank" aria-label="Instagram" color="inherit">
                         <img src="imgs/logo-instagram.png" alt="Instagram" />

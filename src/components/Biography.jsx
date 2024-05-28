@@ -72,10 +72,9 @@ function Biography() {
       </ImageContainer>
       <TextContainer>
         <Paragraph>
-          Nascido em 1999 e criado em Rodeio-Bonito/RS, Eduardo Di Domenico apaixonou-se pela música eletrônica em 2019 e logo no ano seguinte fez primeiro curso de mixagem com Marcos Deon, aprofundando-se cada vez mais no gênero e criando sua própria identidade sonora com uma bassline intensa e ritmada que transita por varias vertentes do House, sendo as principais Tech House e House.
-          Após 5 anos de discotecagem e diversas gigs, Di Domenico adquiriu uma leitura  apurada de pista que o permite transitar suave e livremente dentre vários estilos do House proporcionado uma experiência única e um set que apenas o próprio entrega.
-          Em 2024 mais conectado e maduro profissionalmente o DJ resolveu por em prática um projeto em que vinha trabalhando a anos, e assim nasceu Freaknc, sua label underground.
-          Natural do interior e Dj assíduo da cena regional por cinco anos, atualmente encontra-se residindo em São-Paulo em busca de novos desafios para sua carreira.
+        Nascido em 1999 e criado em Rodeio-Bonito, RS, Eduardo Di Domenico descobriu sua paixão pela música eletrônica em 2019. No ano seguinte, ele realizou seu primeiro curso de mixagem com Marcos Deon, aprofundando-se no gênero e desenvolvendo sua própria identidade sonora, caracterizada por uma bassline intensa e ritmada que abrange diversas vertentes do House, com destaque para Tech House e House.
+Com cinco anos de experiência como DJ e inúmeras apresentações, Di Domenico adquiriu uma apurada percepção de pista, permitindo-lhe navegar suavemente entre diferentes estilos de House, proporcionando uma experiência única e sets exclusivos.
+Em 2024, mais conectado e maduro profissionalmente, Eduardo lançou a Freaknc, sua label underground, um projeto em que vinha trabalhando há anos. Natural do interior e presença constante na cena regional, atualmente reside em São Paulo, buscando novos desafios para sua carreira.
         </Paragraph>
       </TextContainer>
     </BiographyContainer>

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import Header from './components/Header';
 import FullScreenBackground from './components/FullScreenBackground';
 import Biography from './components/Biography';
