@@ -42,7 +42,6 @@ const StyledButton = styled(Button)({
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
   },
   '@media (max-width: 600px)': {
-    // display: 'none',
     marginLeft: '2px',
     padding: '0',
     fontSize: '11px'
