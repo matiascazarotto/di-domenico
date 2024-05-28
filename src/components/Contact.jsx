@@ -65,12 +65,18 @@ const SocialIconsContainer = styled(Box)({
 });
 
 const CustomIconButton = styled(IconButton)({
+    position: 'relative',
     padding: '20px',
     flexDirection: 'column',
     justifyContent: 'center',
     flex: '1',
+    transition: 'transform 0.9s ease',
+    cursor: 'pointer',
+    alignItems: 'center',
+    textDecoration: 'none',
     '&:hover': {
         backgroundColor: 'transparent',
+        transform: 'scale(1.3)',
     },
     '& img': {
         width: '50px',

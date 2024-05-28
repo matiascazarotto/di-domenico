@@ -8,6 +8,7 @@ const BiographyContainer = styled('div')({
   justifyContent: 'center',
   alignItems: 'center',
   flexDirection: 'column',
+  overflow: 'hidden',
   '@media (min-width: 1100px)': {
     flexDirection: 'row',
   },
@@ -41,6 +42,11 @@ const Title = styled('h2')({
 const Image = styled('img')({
   width: '100%',
   height: 'auto',
+  transition: 'transform 0.9s ease',
+  '&:hover': {
+    backgroundColor: 'transparent',
+    transform: 'scale(1.2)',
+},
   '@media (min-width: 800px)': {
     width: '600px',
   },

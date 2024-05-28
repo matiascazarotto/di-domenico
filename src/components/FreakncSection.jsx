@@ -1,38 +1,63 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { styled } from '@mui/system';
 
 const Container = styled('div')({
   position: 'relative',
   width: '100%',
-  height: '100vh', // Define a altura para ocupar toda a tela verticalmente
-  background: 'url("imgs/wppyellow.jpg") center/cover no-repeat', // Define a imagem de fundo e seu posicionamento
-  transition: 'background-color 0.5s ease', // Adiciona uma transição suave para a cor de fundo
+  height: '100vh',
+  background: 'url("imgs/wppyellow.jpg") center/cover no-repeat',
+  transition: 'background-color 0.5s ease',
   '&:hover': {
-    backgroundColor: 'rgba(0, 0, 0, 0.6)', // Escurece a cor de fundo ao passar o mouse
+    backgroundColor: 'rgba(0, 0, 0, 0.6)', 
   },
 });
 
-const LinkContainer = styled('a')({
+const LinkContainer = styled('a')(({ isIntersecting }) => ({
   position: 'absolute',
-  top: '50%', // Posiciona o link no centro verticalmente
-  left: '50%', // Posiciona o link no centro horizontalmente
-  transform: 'translate(-50%, -50%)', // Centraliza o link
+  top: '50%',
+  left: '50%', 
+  transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%)', 
   cursor: 'pointer',
-  transition: 'transform 0.9s ease', // Adiciona uma transição suave para a escala do link
-  '&:hover': {
-    transform: 'translate(-50%, -50%) scale(1.2)', // Aumenta ligeiramente a escala do link ao passar o mouse
-  },
-});
+  transition: 'transform 0.9s ease',
+}));
 
 const Image = styled('img')({
-  width: '200px', // Defina a largura da imagem conforme necessário
-  height: 'auto', // Mantém a proporção da imagem
+  width: '200px',
+  height: 'auto',
 });
 
 function FreakncSection() {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5, // Change this threshold as needed
+      }
+    );
+
+    const currentRef = containerRef.current; // Copiar a referência para uma variável local
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []); // Adicione [] como segundo argumento para garantir que este efeito só seja executado uma vez
+
   return (
-    <Container>
-      <LinkContainer href="https://www.instagram.com/freaknclabel" target="_blank">
+    <Container ref={containerRef}>
+      <LinkContainer href="https://www.instagram.com/freaknclabel" target="_blank" isIntersecting={isIntersecting}>
         <Image src="imgs/logo-freaknc.png" alt="Freaknc" />
       </LinkContainer>
     </Container>

@@ -8,19 +8,15 @@ import Contact from './components/Contact';
 import SpotifySection from './components/SpotifySection';
 import FreakncSection from './components/FreakncSection';
 import Author from './components/Author';
+import Presspack from './components/Presspack';
 
 
 function App() {
-  const biographyRef = useRef(null);
-  const contactRef = useRef(null);
+  const presspackRef = useRef(null);
   const homeRef = useRef(null);
 
-  const scrollToBiography = () => {
-    biographyRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const scrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToPresspack = () => {
+    presspackRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const scrollToHome = () => {
@@ -29,21 +25,14 @@ function App() {
 
 
 
-  const BiographyScroll = React.forwardRef((props, ref) => {
+  const PresspackScroll = React.forwardRef((props, ref) => {
     return (
       <div ref={ref}>
-        <Biography />
+        <Presspack />
       </div>
     );
   });
 
-  const ContactScroll = React.forwardRef((props, ref) => {
-    return (
-      <div ref={ref}>
-        <Contact />
-      </div>
-    );
-  });
 
   const FullScreenBackgroundScroll = React.forwardRef((props, ref) => {
     return (
@@ -58,13 +47,14 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Header scrollToAbout={scrollToBiography} scrollToContact={scrollToContact} scrollToHome={scrollToHome}/>
+      <Header scrollToPresspack={scrollToPresspack} scrollToHome={scrollToHome}/>
       <FullScreenBackgroundScroll ref={homeRef} /> 
-      <BiographyScroll ref={biographyRef} />
+      <Biography />
       <FreakncSection />
       <SoundCloudSection />
       <SpotifySection />
-      <ContactScroll ref={contactRef} />
+      <PresspackScroll ref={presspackRef} />
+      <Contact />
       <Author />
     </>
   );
