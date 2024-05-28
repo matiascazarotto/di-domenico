@@ -33,7 +33,7 @@ function SoundCloudSection() {
   return (
     <Container>
       <LinkContainer href="https://soundcloud.com/user-356514522" target="_blank">
-        <Image src="/imgs/logo-soundcloud.png" alt="SoundCloud" />
+        <Image src="di-domenico/imgs/logo-soundcloud.png" alt="SoundCloud" />
       </LinkContainer>
     </Container>
   );

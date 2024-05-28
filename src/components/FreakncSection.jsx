@@ -33,7 +33,7 @@ function FreakncSection() {
   return (
     <Container>
       <LinkContainer href="https://www.instagram.com/freaknclabel" target="_blank">
-        <Image src="/imgs/logo-freaknc.png" alt="Freaknc" />
+        <Image src="di-domenico/imgs/logo-freaknc.png" alt="Freaknc" />
       </LinkContainer>
     </Container>
   );

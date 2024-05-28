@@ -33,7 +33,7 @@ function SpotifySection() {
   return (
     <Container>
       <LinkContainer href="https://open.spotify.com/user/12161372092?si=v5VyS3ArTASaskGxGibkAA" target="_blank">
-        <Image src="/imgs/logo-spotify.png" alt="Spotify" />
+        <Image src="di-domenico/imgs/logo-spotify.png" alt="Spotify" />
       </LinkContainer>
     </Container>
   );
