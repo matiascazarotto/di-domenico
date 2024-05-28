@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/di-domenico/static/js/main.4bb5a671.js",
-    "index.html": "/di-domenico/index.html",
-    "main.4bb5a671.js.map": "/di-domenico/static/js/main.4bb5a671.js.map"
+    "main.js": "./static/js/main.168b879a.js",
+    "index.html": "./index.html",
+    "main.168b879a.js.map": "./static/js/main.168b879a.js.map"
   },
   "entrypoints": [
-    "static/js/main.4bb5a671.js"
+    "static/js/main.168b879a.js"
   ]
 }
