@@ -67,7 +67,7 @@ function Biography() {
   return (
     <BiographyContainer>
       <ImageContainer>
-        <Image src="di-domenico/imgs/pics/bio.jpg" alt="Artist" />
+        <Image src="imgs/pics/bio.jpg" alt="Artist" />
         <Title>BIOGRAFIA</Title>
       </ImageContainer>
       <TextContainer>

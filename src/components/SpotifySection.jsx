@@ -5,7 +5,7 @@ const Container = styled('div')({
   position: 'relative',
   width: '100%',
   height: '100vh', // Define a altura para ocupar toda a tela verticalmente
-  background: 'url("/imgs/wppgreen.jpg") center/cover no-repeat', // Define a imagem de fundo e seu posicionamento
+  background: 'url("imgs/wppgreen.jpg") center/cover no-repeat', // Define a imagem de fundo e seu posicionamento
   transition: 'background-color 0.5s ease', // Adiciona uma transição suave para a cor de fundo
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.6)', // Escurece a cor de fundo ao passar o mouse
@@ -33,7 +33,7 @@ function SpotifySection() {
   return (
     <Container>
       <LinkContainer href="https://open.spotify.com/user/12161372092?si=v5VyS3ArTASaskGxGibkAA" target="_blank">
-        <Image src="di-domenico/imgs/logo-spotify.png" alt="Spotify" />
+        <Image src="imgs/logo-spotify.png" alt="Spotify" />
       </LinkContainer>
     </Container>
   );

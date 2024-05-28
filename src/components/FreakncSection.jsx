@@ -5,7 +5,7 @@ const Container = styled('div')({
   position: 'relative',
   width: '100%',
   height: '100vh', // Define a altura para ocupar toda a tela verticalmente
-  background: 'url("/imgs/wppyellow.jpg") center/cover no-repeat', // Define a imagem de fundo e seu posicionamento
+  background: 'url("imgs/wppyellow.jpg") center/cover no-repeat', // Define a imagem de fundo e seu posicionamento
   transition: 'background-color 0.5s ease', // Adiciona uma transição suave para a cor de fundo
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.6)', // Escurece a cor de fundo ao passar o mouse
@@ -33,7 +33,7 @@ function FreakncSection() {
   return (
     <Container>
       <LinkContainer href="https://www.instagram.com/freaknclabel" target="_blank">
-        <Image src="di-domenico/imgs/logo-freaknc.png" alt="Freaknc" />
+        <Image src="imgs/logo-freaknc.png" alt="Freaknc" />
       </LinkContainer>
     </Container>
   );

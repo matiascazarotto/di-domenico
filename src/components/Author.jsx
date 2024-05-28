@@ -52,7 +52,7 @@ function Author() {
       <TextContainer>
         <Title>EDUARDO DI DOMENICO</Title>
       </TextContainer>
-        <Image src="di-domenico//imgs/pics/bio1.png" alt="Di Domenico" />
+        <Image src="imgs/pics/bio1.png" alt="Di Domenico" />
     </BiographyContainer>
   );
 }
