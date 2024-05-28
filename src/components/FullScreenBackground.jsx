@@ -9,7 +9,7 @@ const BackgroundContainer = styled('div')({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundImage: 'url(di-domenico/imgs/bg.jpg)',
+  backgroundImage: 'url(imgs/bg.jpg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   overflow: 'hidden',
