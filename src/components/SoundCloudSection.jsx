@@ -5,7 +5,7 @@ const Container = styled('div')({
   position: 'relative',
   width: '100%',
   height: '100vh', 
-  background: 'url("imgs/wpp2.jpg") center/cover no-repeat', 
+  background: 'url("imgs/wppSoundCloud.jpg") center/cover no-repeat', 
   transition: 'background-color 0.5s ease',
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
@@ -42,7 +42,7 @@ function SoundCloudSection() {
       }
     );
 
-    const currentRef = containerRef.current; // Linha adicionada
+    const currentRef = containerRef.current;
 
     if (currentRef) {
       observer.observe(currentRef);

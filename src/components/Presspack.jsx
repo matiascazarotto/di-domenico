@@ -8,7 +8,7 @@ const SectionContainer = styled(Box)({
     alignItems: 'center',
     flexDirection: 'column',
     backgroundColor: '#121212',
-    backgroundImage: 'url(/imgs/prasspack-bg.jpg)',
+    backgroundImage: 'url(/imgs/wppPrasspack.jpg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: '#ffffff',
@@ -134,17 +134,18 @@ function Presspack() {
                 threshold: 0.5, // Change this threshold as needed
             }
         );
+        const currentRef = containerRef.current;
 
-        if (containerRef.current) {
-            observer.observe(containerRef.current);
+        if (currentRef) {
+          observer.observe(currentRef);
         }
-
+    
         return () => {
-            if (containerRef.current) {
-                observer.unobserve(containerRef.current);
-            }
+          if (currentRef) {
+            observer.unobserve(currentRef);
+          }
         };
-    }, []);
+      }, []);
 
     return (
         <SectionContainer>
@@ -153,7 +154,7 @@ function Presspack() {
                 <VerticalLine />
             </VerticalTextContainer>
             <ContactInfoContainer ref={containerRef}>
-                <LinkContainer href="https://soundcloud.com/user-356514522" target="_blank" isIntersecting={isIntersecting}>
+                <LinkContainer href="https://drive.google.com/drive/folders/1yqfh-VXSpC8PRxMyx1haMgC7RB7akOSr" target="_blank" isIntersecting={isIntersecting}>
                     <Image src="imgs/logo-gdrive.png" alt="Press Pack Google Drive" />
                     <SocialText>GOOGLE DRIVE</SocialText>
                 </LinkContainer>

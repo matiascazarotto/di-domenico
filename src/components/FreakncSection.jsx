@@ -5,7 +5,7 @@ const Container = styled('div')({
   position: 'relative',
   width: '100%',
   height: '100vh',
-  background: 'url("imgs/wppyellow.jpg") center/cover no-repeat',
+  background: 'url("imgs/wppFreaknc.jpg") center/cover no-repeat',
   transition: 'background-color 0.5s ease',
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.6)', 

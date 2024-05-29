@@ -5,7 +5,7 @@ const Container = styled('div')({
   position: 'relative',
   width: '100%',
   height: '100vh', 
-  background: 'url("imgs/wppgreen.jpg") center/cover no-repeat', 
+  background: 'url("imgs/wppSpotify.jpg") center/cover no-repeat', 
   transition: 'background-color 0.5s ease', 
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.6)', 
@@ -42,13 +42,15 @@ function SpotifySection() {
       }
     );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+    const currentRef = containerRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
