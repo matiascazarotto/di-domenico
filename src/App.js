@@ -8,7 +8,6 @@ import Contact from './components/Contact';
 import SpotifySection from './components/SpotifySection';
 import FreakncSection from './components/FreakncSection';
 import Author from './components/Author';
-import Presspack from './components/Presspack';
 
 
 function App() {
@@ -63,8 +62,7 @@ function App() {
       <BioScroll ref={bioRef}/>
       <FreakncSection />
       <SoundCloudSection />
-      <SpotifySection />
-      <Presspack />
+      <SpotifySection /> 
       <ContactScroll ref={contactRef} />
       <Author />
     </>

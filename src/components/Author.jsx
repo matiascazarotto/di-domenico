@@ -58,7 +58,9 @@ function Author() {
       <TextContainer>
         <Title>EDUARDO DI DOMENICO</Title>
       </TextContainer>
+      <a href="https://drive.google.com/drive/folders/1yqfh-VXSpC8PRxMyx1haMgC7RB7akOSr" target="_blank" rel="noopener noreferrer">
         <Image src="imgs/pics/bio1.png" alt="Di Domenico" />
+      </a> 
     </AuthorContainer>
   );
 }
