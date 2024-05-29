@@ -97,9 +97,6 @@ const LinkContainer = styled('a')(({ isIntersecting }) => ({
     transition: 'transform 0.9s ease',
     textDecoration: 'none',
     transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%)',
-    // '&:hover': {
-    //     transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%) scale(1.5)',
-    // },
     '@media (min-width: 900px)': {
         position: 'absolute',
         top: '50%',
