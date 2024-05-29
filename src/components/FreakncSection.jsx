@@ -38,11 +38,11 @@ function FreakncSection() {
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5, // Change this threshold as needed
+        threshold: 0.5,
       }
     );
 
-    const currentRef = containerRef.current; // Copiar a referência para uma variável local
+    const currentRef = containerRef.current;
 
     if (currentRef) {
       observer.observe(currentRef);
@@ -53,7 +53,7 @@ function FreakncSection() {
         observer.unobserve(currentRef);
       }
     };
-  }, []); // Adicione [] como segundo argumento para garantir que este efeito só seja executado uma vez
+  }, []); 
 
   return (
     <Container ref={containerRef}>

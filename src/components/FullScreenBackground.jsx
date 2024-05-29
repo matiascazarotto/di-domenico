@@ -55,7 +55,6 @@ function FullScreenBackground() {
     };
   }, []);
 
-  // Configuração da animação para o texto
   const textAnimation = useSpring({
     transform: scrollY < 350 ? `translateY(${scrollY}px)` :
                 scrollY < 400 ? `translateY(${300 - scrollY}px)` :

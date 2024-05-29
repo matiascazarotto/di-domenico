@@ -96,16 +96,13 @@ const LinkContainer = styled('a')(({ isIntersecting }) => ({
     cursor: 'pointer',
     transition: 'transform 0.9s ease',
     textDecoration: 'none',
-    transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%)',
-    '@media (min-width: 900px)': {
+    transform: isIntersecting ? 'scale(1.3)' : 'scale(1)',
+    '@media (min-width: 1100px)': {
         position: 'absolute',
         top: '50%',
         left: '50%',
         transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%)',
-    },
-    '@media (max-width: 600px)': {
-        transform: isIntersecting ? 'scale(1.3)' : 'scale(1)',
-    },
+    }
 }));
 
 const Image = styled('img')({

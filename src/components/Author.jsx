@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from '@mui/system';
 
-const BiographyContainer = styled('div')({
+const AuthorContainer = styled('div')({
   display: 'flex',
   background: 'linear-gradient(to left, #AAAAAA 50%, transparent 30%)',
   width: '100%',
@@ -54,12 +54,12 @@ const Image = styled('img')({
 
 function Author() {
   return (
-    <BiographyContainer>
+    <AuthorContainer>
       <TextContainer>
         <Title>EDUARDO DI DOMENICO</Title>
       </TextContainer>
         <Image src="imgs/pics/bio1.png" alt="Di Domenico" />
-    </BiographyContainer>
+    </AuthorContainer>
   );
 }
 
