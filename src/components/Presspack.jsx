@@ -96,15 +96,15 @@ const LinkContainer = styled('a')(({ isIntersecting }) => ({
     cursor: 'pointer',
     transition: 'transform 0.9s ease',
     textDecoration: 'none',
-    transform: isIntersecting ? 'translate(-50%, -50%) scale(1.5)' : 'translate(-50%, -50%)',
-    '&:hover': {
-        transform: isIntersecting ? 'translate(-50%, -50%) scale(1.5)' : 'translate(-50%, -50%) scale(1.5)',
-    },
+    transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%)',
+    // '&:hover': {
+    //     transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%) scale(1.5)',
+    // },
     '@media (min-width: 900px)': {
         position: 'absolute',
         top: '50%',
         left: '50%',
-        transform: isIntersecting ? 'translate(-50%, -50%) scale(1.5)' : 'translate(-50%, -50%)',
+        transform: isIntersecting ? 'translate(-50%, -50%) scale(1.3)' : 'translate(-50%, -50%)',
     },
     '@media (max-width: 600px)': {
         transform: isIntersecting ? 'scale(1.3)' : 'scale(1)',
@@ -131,7 +131,7 @@ function Presspack() {
             {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.5, // Change this threshold as needed
+                threshold: 0.5,
             }
         );
         const currentRef = containerRef.current;
