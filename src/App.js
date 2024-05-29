@@ -12,23 +12,35 @@ import Presspack from './components/Presspack';
 
 
 function App() {
-  const presspackRef = useRef(null);
+  const bioRef = useRef(null);
   const homeRef = useRef(null);
+  const contactRef = useRef(null);
 
-  const scrollToPresspack = () => {
-    presspackRef.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToBio = () => {
+    bioRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const scrollToHome = () => {
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
 
-  const PresspackScroll = React.forwardRef((props, ref) => {
+  const BioScroll = React.forwardRef((props, ref) => {
     return (
       <div ref={ref}>
-        <Presspack />
+        <Biography />
+      </div>
+    );
+  });
+
+  const ContactScroll = React.forwardRef((props, ref) => {
+    return (
+      <div ref={ref}>
+        <Contact />
       </div>
     );
   });
@@ -47,14 +59,14 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Header scrollToPresspack={scrollToPresspack} scrollToHome={scrollToHome}/>
+      <Header scrollToBio={scrollToBio} scrollToHome={scrollToHome} scrollToContact={scrollToContact}/>
       <FullScreenBackgroundScroll ref={homeRef} /> 
-      <Biography />
+      <BioScroll ref={bioRef}/>
       <FreakncSection />
       <SoundCloudSection />
       <SpotifySection />
-      <PresspackScroll ref={presspackRef} />
-      <Contact />
+      <Presspack />
+      <ContactScroll ref={contactRef} />
       <Author />
     </>
   );

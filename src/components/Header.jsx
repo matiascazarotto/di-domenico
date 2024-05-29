@@ -48,7 +48,7 @@ const StyledButton = styled(Button)({
   },
 });
 
-function Header({scrollToHome, scrollToPresspack }) {
+function Header({scrollToHome, scrollToBio, scrollToContact }) {
   return (
     <Root>
       <StyledAppBar>
@@ -56,7 +56,8 @@ function Header({scrollToHome, scrollToPresspack }) {
           <Title onClick={scrollToHome}>
             DI DOMENICO
           </Title>
-          <StyledButton onClick={scrollToPresspack}>PRESS PACK</StyledButton>
+          <StyledButton onClick={scrollToContact}>Contato</StyledButton>
+          <StyledButton onClick={scrollToBio}>Sobre</StyledButton>
         </Toolbar>
       </StyledAppBar>
     </Root>

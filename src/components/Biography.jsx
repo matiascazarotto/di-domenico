@@ -6,6 +6,7 @@ const BiographyContainer = styled('div')({
   justifyContent: 'center',
   alignItems: 'center',
   flexDirection: 'column',
+  overflow: 'hidden',
   '@media (min-width: 1100px)': {
     flexDirection: 'row',
   },
@@ -46,7 +47,7 @@ const Title = styled('h2')({
   transition: 'transform 0.9s ease',
   '&:hover': {
     backgroundColor: 'transparent',
-    transform: 'scale(1.2)',
+    transform: 'scale(1.1)',
 },
   '@media (min-width: 1100px)': {
     fontSize: '90px',
@@ -79,7 +80,7 @@ function Biography() {
         <Paragraph>
         Nascido em 1999 e criado em Rodeio-Bonito, RS, Eduardo Di Domenico descobriu sua paixão pela música eletrônica em 2019. No ano seguinte, ele realizou seu primeiro curso de mixagem com Marcos Deon, aprofundando-se no gênero e desenvolvendo sua própria identidade sonora, caracterizada por uma bassline intensa e ritmada que abrange diversas vertentes do House, com destaque para Tech House e House.
         Com cinco anos de experiência como DJ e inúmeras apresentações, Di Domenico adquiriu uma apurada percepção de pista, permitindo-lhe navegar suavemente entre diferentes estilos de House, proporcionando uma experiência única e sets exclusivos.
-        Em 2024, mais conectado e maduro profissionalmente, Eduardo lançou a Freaknc, sua label underground, um projeto em que vinha trabalhando há anos. Natural do interior e presença constante na cena regional, atualmente reside em São Paulo, buscando novos desafios para sua carreira.
+        Em 2024, mais conectado e maduro profissionalmente, Eduardo lançou a Freaknc, sua label underground, dando mais um passo em busca de novos desafios na sua carreira.
         </Paragraph>
       </TextContainer>
     </BiographyContainer>

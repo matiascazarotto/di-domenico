@@ -15,6 +15,7 @@ const SectionContainer = styled(Box)({
     textAlign: 'center',
     position: 'relative',
     paddingTop: '50px',
+    overflow: 'hidden',
     '@media (min-width: 900px)': {
         flexDirection: 'row',
         padding: '40px 250px',
