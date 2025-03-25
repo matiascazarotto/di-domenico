@@ -3,7 +3,7 @@ import { styled } from '@mui/system';
 
 const AuthorContainer = styled('div')({
   display: 'flex',
-  background: 'linear-gradient(to left, #AAAAAA 50%, transparent 30%)',
+  //background: 'linear-gradient(to left, #AAAAAA 50%, transparent 30%)',
   width: '100%',
   justifyContent: 'center',
   alignItems: 'center',
@@ -45,7 +45,7 @@ const Image = styled('img')({
   transition: 'transform 0.9s ease',
   '&:hover': {
     backgroundColor: 'transparent',
-    transform: 'scale(1.2)',
+    transform: 'scale(1.1)',
 },
   '@media (min-width: 800px)': {
     width: '600px',
@@ -59,7 +59,7 @@ function Author() {
         <Title>EDUARDO DI DOMENICO</Title>
       </TextContainer>
       <a href="https://drive.google.com/drive/folders/1yqfh-VXSpC8PRxMyx1haMgC7RB7akOSr" target="_blank" rel="noopener noreferrer">
-        <Image src="imgs/pics/bio1.png" alt="Di Domenico" />
+        <Image src="imgs/pics/bio2.jpg" alt="Di Domenico" />
       </a> 
     </AuthorContainer>
   );
