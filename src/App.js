@@ -62,7 +62,6 @@ function App() {
       <BioScroll ref={bioRef}/>
       <FreakncSection />
       <SoundCloudSection />
-      <SpotifySection /> 
       <ContactScroll ref={contactRef} />
       <Author />
     </>
